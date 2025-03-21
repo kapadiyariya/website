@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cake Animation</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <h2 class="title">Cake for you sir🎂</h2>
+
+    <div class="container">
+      <div class="cake">
+        <div class="candle"></div>
+        <div class="top-layer"></div>
+        <div class="middle-layer"></div>
+        <div class="bottom-layer"></div>
+
+        <a href="page3.html" class="btn">Next Surprise</a>
+
+
+      </div>
+    </div>
+   <script>
+        function createConfetti() {
+            for (let i = 0; i < 50; i++) {
+                let confetti = document.createElement("div");
+                confetti.className = "confetti";
+                confetti.style.left = Math.random() * 100 + "vw";
+                confetti.style.animationDuration = (Math.random() * 2 + 1) + "s";
+                confetti.style.backgroundColor = ["red", "blue", "yellow", "green", "purple"][Math.floor(Math.random() * 5)];
+                document.body.appendChild(confetti);
+            }
+        }
+        createConfetti();
+    </script> 
+  </body>
+</html>

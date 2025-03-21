@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishes</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #ffe4e1;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        .message {
+            font-size: 2em;
+            animation: fadeIn 2s ease-in-out;
+            color: #d2691e;
+        }
+        .heart {
+            font-size: 3em;
+            animation: heartbeat 1.5s infinite;
+            color: red;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #ff6347;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="message">💖 Happy Birthday cutie! 💖</h1>
+        <p class="message">May your day be filled with love, joy, and all your heart desires.</p>
+        <p class="heart">❤️</p>
+        <a href="2ndcake.html" class="btn">Next Surprise</a>
+    </div>
+</body>
+</html>

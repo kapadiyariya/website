@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Birthday Gift!</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #d1ae23;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .title{
+            font-stretch: expanded;
+            font-weight: 600;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 50px;
+            position: absolute;
+            top: 10px;
+            left:38%;
+            top:auto;
+        }
+        .btn:hover {
+            background-color: #ff6347;
+        }
+        
+        .message {
+            font-size: 1.8em;
+            color: #d2691e;
+            margin-top: 20px;
+            display: none;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+  <h1>Click Below For Surprise</h1>
+
+  <!-- Audio Element -->
+  <audio id="myAudio">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Button -->
+  <button onclick="playMusic()">Play Music</button>
+
+  <!-- JavaScript -->
+  <script>
+    function playMusic() {
+      var audio = document.getElementById("myAudio");
+      audio.play();
+    }
+  </script>
+          <a href="page4.html" class="btn">Last Message</a>
+</body>
+</html>
